@@ -4,6 +4,11 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
+# implementing jwt auth
+from flask_jwt_extended import JWTManager
+app.config['JWT_SECRET_KEY'] = 'your_jwt_secret_key'  # better to use environment variable for production
+jwt = JWTManager(app)
+
 # Importing and initializing the API from routes.py
 from routes import api
 api.init_app(app)

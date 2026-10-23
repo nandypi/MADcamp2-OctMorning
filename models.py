@@ -10,7 +10,11 @@ class User(db.Model):
     role = db.Column(db.String(20), nullable=False, default='user')  # 'user' or 'admin'
 
     def __repr__(self):
-        return f'<User {self.username}>'
+        return f'<User ~ {self.username}>'
+
+    def check_password(self, password):
+        # In a real application, you should hash the password and compare the hash
+        return self.password == password
 
     def to_dict(self):
         return {
