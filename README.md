@@ -18,3 +18,15 @@ python app.py
 ```
 
 ## Frontend
+1. Change directory to frontend
+```bash
+cd frontend
+```
+2. Install dependencies if not done
+```bash
+npm install
+```
+3. Run the server
+```bash
+npm run dev
+```
