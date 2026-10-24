@@ -1,8 +1,10 @@
 print("Welcome to MAD2 Project")
 
 from flask import Flask, request
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 # implementing jwt auth
 from flask_jwt_extended import JWTManager

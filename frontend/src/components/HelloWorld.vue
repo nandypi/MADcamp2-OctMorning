@@ -11,9 +11,7 @@ defineProps({
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      You’ve successfully created a project with
-      <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
+      Hey there! Welcome to the MAD2Camp frontend. This is a simple Vue 3 + Vite project that you can use as a starting point for your own applications.
     </h3>
   </div>
 </template>
